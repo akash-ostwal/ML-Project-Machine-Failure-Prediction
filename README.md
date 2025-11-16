@@ -1,4 +1,4 @@
-🏭 ## Machine Failure Prediction — Predictive Maintenance using Machine Learning
+🏭 **Machine Failure Prediction — Predictive Maintenance using Machine Learning**
 
 📌 **Project Overview**    
 This project focuses on predicting machine failure in a manufacturing environment using sensor readings and operational data.
@@ -16,7 +16,7 @@ The goal is to support predictive maintenance, reduce downtime, and optimize pla
 📂 **Dataset Summary**    
 The dataset contains machine operational parameters and failure type indicators.
 
-  Features Include:  
+  **Features Include:**  
   Air Temperature (K)   
   Process Temperature (K)  
   Rotational Speed (rpm)  
@@ -25,7 +25,7 @@ The dataset contains machine operational parameters and failure type indicators.
   Failure Flags (TWF, HDF, PWF, OSF, RNF)  
   Target Variable: Machine Failure  
 
-Data was clean, consistent, and contained no missing values.
+**Data was clean, consistent, and contained no missing values.**
 
 🔧 **Workflow Summary**     
 1️⃣ **Data Preprocessing**   
@@ -44,22 +44,22 @@ Data was clean, consistent, and contained no missing values.
 
 3️⃣ **Model Selection**    
 
-Algorithms evaluated:   
+**Algorithms evaluated:**
   Logistic Regression    
   Decision Tree   
   Random Forest   
   Gaussian Naive Bayes   
   XGBoost   
 
-Evaluation Metrics Used:  
+**Evaluation Metrics Used:**  
   Accuracy   
   Recall   
   F1-score     
   ROC–AUC   
 
-Confusion Matrix   
+**Confusion Matrix** 
 
-➡️ Random Forest consistently performed best for minority-class detection.   
+➡️ **Random Forest consistently performed best for minority-class detection.**   
 
 4️⃣ **Final Model**   
 
@@ -70,20 +70,20 @@ Confusion Matrix
 
 5️⃣ **Predictions & Export**    
 
-  Predicted machine failure labels for new input data and exported:   
+  **Predicted machine failure labels for new input data and exported:**   
   Predicted Machine Failure Results.csv   
 
 📊 **Results Summary**   
 
-  Overall Accuracy: ~99%   
-  Failure Class Recall: ~0.80   
-  Failure Class F1-Score: ~0.72   
+  **Overall Accuracy:** ~99%   
+  **Failure Class Recall:** ~0.80   
+  **Failure Class F1-Score:** ~0.72   
 
-Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.
+**Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.**
 
 🧠 **Insights from Feature Importance**   
 
-Most influential parameters were:   
+**Most influential parameters were:**  
   Rotational speed (rpm)    
   Torque (Nm)   
   OSF (Overstrain Failure indicator)   
@@ -93,11 +93,11 @@ Most influential parameters were:
   PWF (Power Failure indicator)   
   Temp_diff (Temperature difference between process & air)   
   Air temperature (K)   
-These variables strongly contribute to predicting machine failures.   
+**These variables strongly contribute to predicting machine failures.**   
 
 🏁 **Conclusion**   
 
-The final model is highly effective in predicting machine failures and can support industries in:  
+**The final model is highly effective in predicting machine failures and can support industries in:**  
   Reducing downtime   
   Planning preventive maintenance  
   Lowering operational risk  
@@ -111,5 +111,5 @@ The final model is highly effective in predicting machine failures and can suppo
 
 👤 **Author**  
 
-Akash   
+**Akash**  
 Machine Learning & Data Science Enthusiast  
