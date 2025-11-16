@@ -1,4 +1,4 @@
-🏭 **Machine Failure Prediction — Predictive Maintenance using Machine Learning**
+🏭 ## Machine Failure Prediction — Predictive Maintenance using Machine Learning
 
 📌 **Project Overview**    
 This project focuses on predicting machine failure in a manufacturing environment using sensor readings and operational data.
