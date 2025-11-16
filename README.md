@@ -44,7 +44,7 @@ The dataset contains machine operational parameters and failure type indicators.
 
 3️⃣ **Model Selection**    
 
-**Algorithms evaluated:**
+**Algorithms evaluated:**    
   Logistic Regression    
   Decision Tree   
   Random Forest   
