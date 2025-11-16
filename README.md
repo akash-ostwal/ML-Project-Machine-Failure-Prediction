@@ -1,12 +1,11 @@
 🏭 **Machine Failure Prediction — Predictive Maintenance using Machine Learning**
 
-📌 **Project Overview**
+📌 **Project Overview**    
 This project focuses on predicting machine failure in a manufacturing environment using sensor readings and operational data.
 The goal is to support predictive maintenance, reduce downtime, and optimize plant efficiency by identifying failures before they occur.
 
 🚀 **Key Highlights**   
-Built a complete end-to-end Machine Learning pipeline
-
+  Built a complete end-to-end Machine Learning pipeline
   Engineered features from temperature, torque, tool wear, and speed  
   Handled imbalanced data using SMOTE (only for model selection)  
   Selected the best model through systematic evaluation  
@@ -14,17 +13,17 @@ Built a complete end-to-end Machine Learning pipeline
   Delivered high recall for failure class (critical for safety)  
   Exported predictions for new unseen data  
 
-📂 **Dataset Summary**
+📂 **Dataset Summary**    
 The dataset contains machine operational parameters and failure type indicators.
 
-  Features Include:
-  Air Temperature (K)
-  Process Temperature (K)
-  Rotational Speed (rpm)
-  Torque (Nm)
-  Tool Wear (min)
-  Failure Flags (TWF, HDF, PWF, OSF, RNF)
-  Target Variable: Machine Failure
+  Features Include:  
+  Air Temperature (K)   
+  Process Temperature (K)  
+  Rotational Speed (rpm)  
+  Torque (Nm)  
+  Tool Wear (min)  
+  Failure Flags (TWF, HDF, PWF, OSF, RNF)  
+  Target Variable: Machine Failure  
 
 Data was clean, consistent, and contained no missing values.
 
