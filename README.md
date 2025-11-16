@@ -4,15 +4,15 @@
 This project focuses on predicting machine failure in a manufacturing environment using sensor readings and operational data.
 The goal is to support predictive maintenance, reduce downtime, and optimize plant efficiency by identifying failures before they occur.
 
-🚀 **Key Highlights**
+🚀 **Key Highlights**   
 Built a complete end-to-end Machine Learning pipeline
 
-  Engineered features from temperature, torque, tool wear, and speed
-  Handled imbalanced data using SMOTE (only for model selection)
-  Selected the best model through systematic evaluation
-  Final model uses Random Forest with class_weight balancing
-  Delivered high recall for failure class (critical for safety)
-  Exported predictions for new unseen data
+  Engineered features from temperature, torque, tool wear, and speed  
+  Handled imbalanced data using SMOTE (only for model selection)  
+  Selected the best model through systematic evaluation  
+  Final model uses Random Forest with class_weight balancing  
+  Delivered high recall for failure class (critical for safety)  
+  Exported predictions for new unseen data  
 
 📂 **Dataset Summary**
 The dataset contains machine operational parameters and failure type indicators.
