@@ -27,89 +27,89 @@ The dataset contains machine operational parameters and failure type indicators.
 
 Data was clean, consistent, and contained no missing values.
 
-🔧 **Workflow Summary**
-1️⃣ **Data Preprocessing**
+🔧 **Workflow Summary**     
+1️⃣ **Data Preprocessing**   
 
-  Cleaned and standardized features
-  Encoded product "Type"
-  Removed unnecessary characters from "Product ID"
-  Split data into train-test sets
+  Cleaned and standardized features   
+  Encoded product "Type"   
+  Removed unnecessary characters from "Product ID"   
+  Split data into train-test sets   
 
-2️⃣ **Handling Class Imbalance**
+2️⃣ **Handling Class Imbalance**   
 
-  Machine failures were rare → dataset was highly imbalanced.
-  SMOTE applied only during model selection to ensure fair comparison
-  Final training done WITHOUT SMOTE to maintain real-world distribution
-  Used class_weight='balanced' for the final Random Forest model
+  Machine failures were rare → dataset was highly imbalanced.   
+  SMOTE applied only during model selection to ensure fair comparison   
+  Final training done WITHOUT SMOTE to maintain real-world distribution   
+  Used class_weight='balanced' for the final Random Forest model   
 
-3️⃣ **Model Selection**
+3️⃣ **Model Selection**    
 
-Algorithms evaluated:
-  Logistic Regression
-  Decision Tree
-  Random Forest
-  Gaussian Naive Bayes
-  XGBoost
+Algorithms evaluated:   
+  Logistic Regression    
+  Decision Tree   
+  Random Forest   
+  Gaussian Naive Bayes   
+  XGBoost   
 
-Evaluation Metrics Used:
-  Accuracy
-  Recall
-  F1-score
-  ROC–AUC
+Evaluation Metrics Used:  
+  Accuracy   
+  Recall   
+  F1-score     
+  ROC–AUC   
 
-Confusion Matrix
+Confusion Matrix   
 
-➡️ Random Forest consistently performed best for minority-class detection.
+➡️ Random Forest consistently performed best for minority-class detection.   
 
-4️⃣ **Final Model**
+4️⃣ **Final Model**   
 
-  Random Forest Classifier
-  Trained with class_weight balancing
-  Produced high recall for failure detection
-  Ensures fewer false negatives (critical for safety)
+  Random Forest Classifier   
+  Trained with class_weight balancing   
+  Produced high recall for failure detection   
+  Ensures fewer false negatives (critical for safety)   
 
-5️⃣ **Predictions & Export**
+5️⃣ **Predictions & Export**    
 
-  Predicted machine failure labels for new input data and exported:
-  Predicted Machine Failure Results.csv
+  Predicted machine failure labels for new input data and exported:   
+  Predicted Machine Failure Results.csv   
 
-📊 **Results Summary**
+📊 **Results Summary**   
 
-  Overall Accuracy: ~99%
-  Failure Class Recall: ~0.80
-  Failure Class F1-Score: ~0.72
+  Overall Accuracy: ~99%   
+  Failure Class Recall: ~0.80   
+  Failure Class F1-Score: ~0.72   
 
 Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.
 
-🧠 **Insights from Feature Importance**
+🧠 **Insights from Feature Importance**   
 
-Most influential parameters were:
-  Rotational speed (rpm)
-  Torque (Nm)
-  OSF (Overstrain Failure indicator)
-  Tool wear (min)
-  HDF (Heat Dissipation Failure indicator)
-  TWF (Thermal Wear Failure indicator)
-  PWF (Power Failure indicator)
-  Temp_diff (Temperature difference between process & air)
-  Air temperature (K)
-These variables strongly contribute to predicting machine failures.
+Most influential parameters were:   
+  Rotational speed (rpm)    
+  Torque (Nm)   
+  OSF (Overstrain Failure indicator)   
+  Tool wear (min)   
+  HDF (Heat Dissipation Failure indicator)   
+  TWF (Thermal Wear Failure indicator)   
+  PWF (Power Failure indicator)   
+  Temp_diff (Temperature difference between process & air)   
+  Air temperature (K)   
+These variables strongly contribute to predicting machine failures.   
 
-🏁 **Conclusion**
+🏁 **Conclusion**   
 
-The final model is highly effective in predicting machine failures and can support industries in:
-  Reducing downtime
-  Planning preventive maintenance
-  Lowering operational risk
-  Improving production efficiency
+The final model is highly effective in predicting machine failures and can support industries in:  
+  Reducing downtime   
+  Planning preventive maintenance  
+  Lowering operational risk  
+  Improving production efficiency  
 
-🔮 **Future Enhancements**
+🔮 **Future Enhancements**  
 
-  Integrate with real-time sensor streaming
-  Implement model monitoring for drift
-  Deploy as an API for live predictions
+  Integrate with real-time sensor streaming  
+  Implement model monitoring for drift  
+  Deploy as an API for live predictions   
 
-👤 **Author**
+👤 **Author**  
 
-Akash
-Machine Learning & Data Science Enthusiast
+Akash   
+Machine Learning & Data Science Enthusiast  
