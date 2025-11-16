@@ -76,16 +76,16 @@ The dataset contains machine operational parameters and failure type indicators.
 📊 **Results Summary**   
 
   **Overall Accuracy:** ~99%   
-  **Failure Class Recall:** ~0.80   
-  **Failure Class F1-Score:** ~0.72   
+  **Failure Class Recall:** ~0.78  
+  **Failure Class F1-Score:** ~0.83
 
 **Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.**
 
 🧠 **Insights from Feature Importance**   
 
 **Most influential parameters were:**  
-  Rotational speed (rpm)    
-  Torque (Nm)   
+  Torque (Nm)
+  Rotational speed (rpm)       
   OSF (Overstrain Failure indicator)   
   Tool wear (min)   
   HDF (Heat Dissipation Failure indicator)   
