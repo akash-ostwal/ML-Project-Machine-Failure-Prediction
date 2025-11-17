@@ -37,7 +37,7 @@ The dataset contains machine operational parameters and failure type indicators.
 2️⃣ **Handling Class Imbalance**   
 
   Machine failures were rare → dataset was highly imbalanced.   
-  SMOTE applied only during model selection to ensure fair comparison.         
+  SMOTE applied on train data set ensure fair comparison.         
 
 3️⃣ **Model Selection**    
 
@@ -71,10 +71,15 @@ The dataset contains machine operational parameters and failure type indicators.
 
 📊 **Results Summary**   
 
-  **Metric****Class 0****Class 1(Failure)**  
-  Precision	   1.00	        0.69   
-  Recall	     0.99	        0.79   
-  F1-score	   1.00	        0.74   
+  **Metric score for Class 0 (no failure)** 
+  Precision-1.00	          
+  Recall-0.99	          
+  F1-score-1.00	          
+
+  **Metric score for Class 1(Failure)**    
+  Precision-0.69     
+  Recall-0.79     
+  F1-score-0.74  
 
 **Overall Accuracy:** 0.99    
 **Macro Avg F1-score:** 0.87   
