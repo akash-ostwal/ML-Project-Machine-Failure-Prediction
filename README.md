@@ -52,8 +52,9 @@ The dataset contains machine operational parameters and failure type indicators.
   XGBoost   
 
 **Evaluation Metrics Used:**  
-  Accuracy   
-  Recall   
+  Accuracy     
+  Precision    
+  Recall     
   F1-score     
   ROC–AUC   
 
