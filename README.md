@@ -75,10 +75,10 @@ The dataset contains machine operational parameters and failure type indicators.
 
 📊 **Results Summary**   
 
-  **Overall Accuracy:** ~100%  
-  **Failure Class Precision:** ~0.97 
-  **Failure Class Recall:** ~0.76  
-  **Failure Class F1-Score:** ~0.85
+  **Overall Accuracy:** ~100%   
+  **Failure Class Precision:** ~0.97    
+  **Failure Class Recall:** ~0.76    
+  **Failure Class F1-Score:** ~0.85  
 
 **Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.**
 
