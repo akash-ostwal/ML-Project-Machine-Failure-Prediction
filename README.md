@@ -86,7 +86,7 @@ The dataset contains machine operational parameters and failure type indicators.
 🧠 **Insights from Feature Importance**   
 
 **Most influential parameters were:**  
-  Torque (Nm)
+  Torque (Nm)   
   Rotational speed (rpm)       
   OSF (Overstrain Failure indicator)   
   Tool wear (min)   
