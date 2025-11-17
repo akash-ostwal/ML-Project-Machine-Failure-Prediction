@@ -48,7 +48,7 @@ The dataset contains machine operational parameters and failure type indicators.
   Logistic Regression    
   Decision Tree   
   Random Forest   
-  Gaussian Naive Bayes   
+  BernoulliNB Naive Bayes   
   XGBoost   
 
 **Evaluation Metrics Used:**  
