@@ -7,10 +7,9 @@ The goal is to support predictive maintenance, reduce downtime, and optimize pla
 🚀 **Key Highlights**   
   Built a complete end-to-end Machine Learning pipeline
   Engineered features from temperature, torque, tool wear, and speed  
-  Handled imbalanced data using SMOTE (only for model selection)  
-  Selected the best model through systematic evaluation  
-  Final model uses Random Forest with class_weight balancing  
-  Delivered high recall for failure class (critical for safety)  
+  Handled imbalanced data using SMOTE 
+  Selected the best model through systematic evaluation   
+  Delivered high recall for failure class  
   Exported predictions for new unseen data  
 
 📂 **Dataset Summary**    
@@ -38,9 +37,7 @@ The dataset contains machine operational parameters and failure type indicators.
 2️⃣ **Handling Class Imbalance**   
 
   Machine failures were rare → dataset was highly imbalanced.   
-  SMOTE applied only during model selection to ensure fair comparison   
-  Final training done WITHOUT SMOTE to maintain real-world distribution   
-  Used class_weight='balanced' for the final Random Forest model   
+  SMOTE applied only during model selection to ensure fair comparison.         
 
 3️⃣ **Model Selection**    
 
@@ -64,10 +61,8 @@ The dataset contains machine operational parameters and failure type indicators.
 
 4️⃣ **Final Model**   
 
-  Random Forest Classifier   
-  Trained with class_weight balancing   
-  Produced high recall for failure detection   
-  Ensures fewer false negatives (critical for safety)   
+  Random Forest Classifier      
+  Produced high recall for failure detection    
 
 5️⃣ **Predictions & Export**    
 
@@ -76,12 +71,17 @@ The dataset contains machine operational parameters and failure type indicators.
 
 📊 **Results Summary**   
 
-  **Overall Accuracy:** ~100%   
-  **Failure Class Precision:** ~0.97    
-  **Failure Class Recall:** ~0.76    
-  **Failure Class F1-Score:** ~0.85  
+  **Metric****Class 0****Class 1(Failure)**  
+  Precision	   1.00	        0.69   
+  Recall	     0.99	        0.79   
+  F1-score	   1.00	        0.74   
 
-**Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.**
+**Overall Accuracy:** 0.99    
+**Macro Avg F1-score:** 0.87   
+**ROC–AUC (Test Set):** 0.96   
+
+**Although accuracy is high due to class imbalance, recall and F1-score were prioritized because missing a machine failure can be costly.**   
+**ROC–AUC Score: 0.96 → Demonstrates strong separability between failure and non-failure classes.**
 
 🧠 **Insights from Feature Importance**   
 
